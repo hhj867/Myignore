@@ -8,7 +8,15 @@ Section Cross References11
     startup_stm32f10x_md.o(HEAP) r emory
     star             er) for NMI_Handler
     startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.HardFault_Handler) for HardFault_Handler
-    startup_stm32f10x_md. sart.o(i.USART2_IRQHandler) for USART2_IRQHandler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.MemManage_Handler) for MemManage_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.BusFault_Handler) for BusFault_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.SVC_Handler) for SVC_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.PendSV_Handler) for PendSV_Handler
+    startup_stm32f10x_md.o(RESET) refers to stm32f10x_it.o(i.SysTick_Handler) for SysTick_Handler
+    startup_stm32f10x_md.o(RESET) refers to usart.o(i.USART1_IRQHandler) for USART1_IRQHandler
+    startup_stm32f10x_md.o(RESET) refers to usart.o(i.USART2_IRQHandler) for USART2_IRQHandler
     startup_stm32f10x_md.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_stm32f10x_md.o(.text) refers to __main.o(!!!main) for __main
     startup_stm32f10x_md.o(.text) refers to startup_stm32f10x_md.o(HEAP) for Heap_Mem
